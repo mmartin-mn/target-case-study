@@ -74,7 +74,7 @@ export const ByRouteSelectors = () => {
 
     // Every time the direction changes, we want to clear the selected stop
     setSelectedStop('');
-  }, [selectedDirection])  // We need to get new stops every time the directions changes
+  }, [selectedDirection, selectedRoute])  // We need to get new stops every time the directions changes
 
   const onRouteSelected = (event: DropdownChangeParams) => {
     setSelectedRoute(event.value);
