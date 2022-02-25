@@ -1,3 +1,27 @@
+# How to run
+
+To run, you need to run `npm i` at the root level to install the npm packages. Then, you can simply run `npm start` at the root level to start the project.
+
+To run the tests, simply run `npm test` or `npm test -- --coverage` if you want to see the code coverage. This should be done after npm packages are installed.
+
+# Relavent packages
+
+I started off by using create react app to start the project.
+
+Pulling in primereact for components. It is what I am currently used to and for speed/familiarity I'm just going to use that.
+
+Pulling in node-sass as I prefer to use scss instead of plain css. It just is easier to set up nested class name styles in case I need them.
+
+# Dev decisions
+
+Even though it wasn't specifically asked for, I am still setting up the components as if we wanted to do the "By Stop #" in the future. So I'm setting up the DepartureInfo component to be able to work independently from the selectors, so it could just be re-used in the future with minimal tweaks for the "By Stop #".
+
+Seems like there is only ever 9 or so depatures returned at any time, so I'm just going to list them all. I can certainly add the ability to do something like they do on the website with a see more button, but since I have a ton of screen real-estate I'm going to keep it simple and list them all.
+
+To make things simple, if any api error happens, I am just going to show a generic error to the user asking them to refresh.
+
+# Below this is the default CRA readme, leaving it here just in case
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

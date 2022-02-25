@@ -1,0 +1,30 @@
+.departure-list-container {
+  background-color: var(--surface-100);
+  border-radius: 3px;
+  max-width: 800px;
+
+  .title-container {
+    width: 100%;
+  }
+
+  .info-header {
+    background-color: var(--yellow-200);
+
+    .route-header {
+      width: 20%;
+    }
+
+    .destination-header {
+      width: 60%;
+    }
+
+    .departs-header {
+      width: 20%;
+      text-align: right;
+    }
+  }
+
+  .depature-list {
+    margin-top: 1.25rem;
+  }
+}
